@@ -52,7 +52,7 @@
             </geometry>
         </collision>
     </link>
-    <xacro:inertial_box mass='0.5' x='1' y='0.7' z='0.5'>
+    <xacro:inertial_box mass='1.4' x='1' y='0.7' z='0.5'>
         <origin xyz= '0 0 0' rpy='0 0 0'/>
     </xacro:inertial_box>
     
