@@ -34,7 +34,7 @@
     <joint name='chassis_joint' type='fixed'>
         <parent link='base_link'/>
         <child link='chassis'/>
-        <origin xyz=' 0 0 0'/>
+        <origin xyz='0 0 0'/>
     </joint>
 
     <link name='chassis'>
@@ -51,10 +51,11 @@
                 <box size= '1 0.7 0.5'/>
             </geometry>
         </collision>
+        <xacro:inertial_box mass='1.4' x='1' y='0.7' z='0.5'>
+            <origin xyz= '0 0 0' rpy='0 0 0'/>
+        </xacro:inertial_box>
     </link>
-    <xacro:inertial_box mass='1.4' x='1' y='0.7' z='0.5'>
-        <origin xyz= '0 0 0' rpy='0 0 0'/>
-    </xacro:inertial_box>
+    
     
 
     <gazebo reference='chassis'>
